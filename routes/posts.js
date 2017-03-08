@@ -13,7 +13,7 @@ marked.setOptions({
 /* GET users listing. */
 router.post('/', function(req, res, next) {
   let post = new Post({
-    ip: req.ip,
+    ip: req.headers['X-Real-IP'],
     user_agent: req.headers['user-agent'],
     referer: req.headers['referer'],
     post: req.body.post 
