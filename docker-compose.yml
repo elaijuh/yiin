@@ -18,6 +18,7 @@ services:
       - ~/docker/mongodb/log:/var/log/mongodb
       - ~/docker/data/db:/data/db
   nginx:
+    image: nginx:1.11-alpine 
     links:
       - fiin 
     ports:
