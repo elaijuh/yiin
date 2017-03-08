@@ -1,0 +1,22 @@
+{
+  "name": "yiin",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "yarn run serve:dev",
+    "serve:dev": "DEBUG=yiin:server node ./bin/www",
+    "serve:prod": "NODE_END=production node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "i18n": "^0.8.3",
+    "marked": "^0.3.6",
+    "mongoose": "^4.8.6",
+    "morgan": "~1.7.0",
+    "pug": "~2.0.0-beta10",
+    "serve-favicon": "~2.3.2"
+  }
+}
