@@ -12,7 +12,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var posts = require('./routes/posts');
 
-mongoose.connect('mongodb://mongo:27017/yiin')
+// mongoose.connect('mongodb://mongo:27017/yiin')
 
 i18n.configure({
   locales: ['en', 'zh-cn'],
