@@ -27,11 +27,13 @@ router.post('/', function(req, res, next) {
 
 router.get('/:id', function(req, res, next) {
   Post.findById(req.params.id, (err, p) => {
-    if (err) next(err)
-    res.render('post', {
-      title: 'yiin.life',
-      post: marked(p.post)
-    })
+    if (err || !p) next(new Error(err))
+    else {
+      res.render('post', {
+        title: 'yiin.life',
+        post: marked(p.post)
+      })
+    }
   })
 });
 
