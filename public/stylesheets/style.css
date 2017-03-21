@@ -7,6 +7,7 @@ body {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
 
 textarea {
@@ -50,4 +51,8 @@ article {
 }
 .logo-small {
   width: 32px;
+}
+
+.about {
+  margin-left: 20px;
 }
