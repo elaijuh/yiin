@@ -15,7 +15,7 @@ var posts = require('./routes/posts');
 mongoose.connect('mongodb://mongo:27017/yiin')
 
 i18n.configure({
-  locales: ['en', 'zh-cn'],
+  locales: ['en', 'zh'],
   directory: __dirname + '/locales'
 })
 
